@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.example.nestedfragmentinandroid.levelFragment.LevelFragment
-import com.example.nestedfragmentinandroid.levelFragment.OnHoldFragment
+import com.example.nestedfragmentinandroid.levelFragment.LevelOnHoldFragment
 import com.google.android.material.tabs.TabLayout
 
 class LevelActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class LevelActivity : AppCompatActivity() {
         val viewPager: ViewPager = findViewById(R.id.viewPager)
         val adapter = LevelViewPagerAdapter(supportFragmentManager)
         for (level in 0..5) {
-            if (level == 0) adapter.addFragment(OnHoldFragment(), "On Hold")
+            if (level == 0) adapter.addFragment(LevelOnHoldFragment(), "On Hold")
             else {
                 adapter.addFragment(LevelFragment(level), "Level $level")
             }

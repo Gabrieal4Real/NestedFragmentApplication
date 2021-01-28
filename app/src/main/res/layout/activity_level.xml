@@ -14,15 +14,17 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
-            android:padding="2dp"
             android:layout_height="wrap_content"
-            android:background="#ED0C0C"
+            android:background="@color/white"
             app:tabGravity="fill"
-            app:tabIndicatorColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:tabIndicatorColor="#ED0C0C"
             app:tabIndicatorHeight="5dp"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="@color/white" />
+            app:tabSelectedTextColor="#ED0C0C"
+            app:tabTextColor="#4a4a4a" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
