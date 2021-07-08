@@ -36,6 +36,7 @@ class LevelFragment(i: Int) : Fragment() {
     }
 }
 
+
 class LevelOnHoldFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -43,8 +44,10 @@ class LevelOnHoldFragment : Fragment() {
 
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerview)
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = LevelsRulesAdapter(12)
-        recyclerView.layoutManager = CustomGridLayoutManager(view.context)
+        recyclerView.layoutManager = LinearLayoutManager(view.context)
+        recyclerView.adapter = LevelsRulesAdapter(1234)
+
+        //recyclerView.layoutManager = CustomGridLayoutManager(view.context)
         return view
     }
 

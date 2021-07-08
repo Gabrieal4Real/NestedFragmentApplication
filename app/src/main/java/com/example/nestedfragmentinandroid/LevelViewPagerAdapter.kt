@@ -30,7 +30,7 @@ class LevelViewPagerAdapter : FragmentPagerAdapter {
         fragmentTitle.add(title)
     }
 
-    override fun getPageTitle(position: Int): CharSequence? {
+    override fun getPageTitle(position: Int): CharSequence {
         return fragmentTitle[position]
 
     }
